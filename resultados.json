@@ -1,0 +1,445 @@
+{
+  "generated_at": "2026-09-30T01:46:39.491384+00:00",
+  "source_sha256": "1939071886d5d9fa6cb41945de9bcc4de4c43386e8ceacc2d317aab1b972e840",
+  "script_sha256": "a5c5b8efd6246958fc3a84de9dc337903fd47a1f21c96fd45824a1d53c4998c5",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "model_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "embedding_dimensions": 1024,
+  "device": "cpu",
+  "dtype": "float32",
+  "python": "3.12.12",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "versions": {
+    "numpy": "2.5.3",
+    "torch": "2.14.0",
+    "transformers": "4.57.6",
+    "sentence-transformers": "5.7.0",
+    "scikit-learn": "1.9.1",
+    "umap-learn": "0.5.12",
+    "numba": "0.67.0",
+    "huggingface-hub": "0.36.2"
+  },
+  "query": [
+    "((\"AI agents\" OR \"coding agents\" OR \"Claude Code\" OR \"Cursor AI\") -crypto -bitcoin -ethereum -token -airdrop -web3 -cotinetwork -nft) lang:en -is:retweet -is:reply"
+  ],
+  "sample": {
+    "raw": 100,
+    "clean": 99,
+    "removed": 1,
+    "discard_reasons": {
+      "duplicate_id_or_normalized_text": 1
+    },
+    "truncated": 0,
+    "unique_authors": 94,
+    "max_posts_per_author": 2,
+    "span_seconds": 1717,
+    "split_sizes": {
+      "train": 59,
+      "validation": 20,
+      "test": 20
+    }
+  },
+  "parameters": {
+    "max_chars": 4000,
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "split": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "umap": {
+      "n_components": 5,
+      "n_neighbors": 15,
+      "min_dist": 0,
+      "metric": "cosine",
+      "n_epochs": 500
+    },
+    "kmeans": {
+      "k": 10,
+      "init": "k-means++",
+      "n_init": 10,
+      "max_iter": 300
+    }
+  },
+  "embedding_seconds_original": 15.38159900001483,
+  "embedding_cached": false,
+  "runs": [
+    {
+      "seed": 42,
+      "clustering_seconds": 8.654878167028073,
+      "train": {
+        "n": 59,
+        "groups": 10,
+        "coverage_percent": 100,
+        "silhouette_cosine": 0.15026342868804932,
+        "singleton_groups": 0,
+        "sizes": {
+          "0": 5,
+          "1": 8,
+          "2": 10,
+          "3": 9,
+          "4": 9,
+          "5": 5,
+          "6": 6,
+          "7": 3,
+          "8": 2,
+          "9": 2
+        }
+      },
+      "validation": {
+        "n": 20,
+        "groups": 7,
+        "coverage_percent": 100,
+        "silhouette_cosine": -0.03880517929792404,
+        "singleton_groups": 5,
+        "sizes": {
+          "0": 5,
+          "2": 1,
+          "3": 10,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "8": 1
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "clustering_seconds": 0.0979282499756664,
+      "train": {
+        "n": 59,
+        "groups": 10,
+        "coverage_percent": 100,
+        "silhouette_cosine": 0.13583490252494812,
+        "singleton_groups": 0,
+        "sizes": {
+          "0": 5,
+          "1": 6,
+          "2": 9,
+          "3": 9,
+          "4": 5,
+          "5": 7,
+          "6": 6,
+          "7": 2,
+          "8": 5,
+          "9": 5
+        }
+      },
+      "validation": {
+        "n": 20,
+        "groups": 6,
+        "coverage_percent": 100,
+        "silhouette_cosine": -0.0007803865009918809,
+        "singleton_groups": 4,
+        "sizes": {
+          "0": 5,
+          "1": 1,
+          "2": 11,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "clustering_seconds": 0.0956188749987632,
+      "train": {
+        "n": 59,
+        "groups": 10,
+        "coverage_percent": 100,
+        "silhouette_cosine": 0.11885673552751541,
+        "singleton_groups": 0,
+        "sizes": {
+          "0": 6,
+          "1": 9,
+          "2": 9,
+          "3": 5,
+          "4": 8,
+          "5": 5,
+          "6": 5,
+          "7": 6,
+          "8": 3,
+          "9": 3
+        }
+      },
+      "validation": {
+        "n": 20,
+        "groups": 6,
+        "coverage_percent": 100,
+        "silhouette_cosine": -0.0007803865009918809,
+        "singleton_groups": 4,
+        "sizes": {
+          "0": 1,
+          "1": 1,
+          "2": 11,
+          "3": 1,
+          "4": 1,
+          "5": 5
+        }
+      }
+    },
+    {
+      "seed": 45,
+      "clustering_seconds": 0.09474358300212771,
+      "train": {
+        "n": 59,
+        "groups": 10,
+        "coverage_percent": 100,
+        "silhouette_cosine": 0.1261141002178192,
+        "singleton_groups": 0,
+        "sizes": {
+          "0": 2,
+          "1": 9,
+          "2": 6,
+          "3": 8,
+          "4": 5,
+          "5": 9,
+          "6": 6,
+          "7": 6,
+          "8": 3,
+          "9": 5
+        }
+      },
+      "validation": {
+        "n": 20,
+        "groups": 7,
+        "coverage_percent": 100,
+        "silhouette_cosine": -0.05009664222598076,
+        "singleton_groups": 5,
+        "sizes": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 4,
+          "5": 11,
+          "9": 1
+        }
+      }
+    },
+    {
+      "seed": 46,
+      "clustering_seconds": 0.09531520796008408,
+      "train": {
+        "n": 59,
+        "groups": 10,
+        "coverage_percent": 100,
+        "silhouette_cosine": 0.09722397476434708,
+        "singleton_groups": 0,
+        "sizes": {
+          "0": 4,
+          "1": 6,
+          "2": 3,
+          "3": 9,
+          "4": 6,
+          "5": 6,
+          "6": 9,
+          "7": 5,
+          "8": 6,
+          "9": 5
+        }
+      },
+      "validation": {
+        "n": 20,
+        "groups": 6,
+        "coverage_percent": 100,
+        "silhouette_cosine": -0.0007803865009918809,
+        "singleton_groups": 4,
+        "sizes": {
+          "0": 1,
+          "1": 1,
+          "3": 11,
+          "4": 5,
+          "5": 1,
+          "6": 1
+        }
+      }
+    }
+  ],
+  "metrics_reference": {
+    "train": {
+      "n": 59,
+      "groups": 10,
+      "coverage_percent": 100,
+      "silhouette_cosine": 0.15026342868804932,
+      "singleton_groups": 0,
+      "sizes": {
+        "0": 5,
+        "1": 8,
+        "2": 10,
+        "3": 9,
+        "4": 9,
+        "5": 5,
+        "6": 6,
+        "7": 3,
+        "8": 2,
+        "9": 2
+      }
+    },
+    "validation": {
+      "n": 20,
+      "groups": 7,
+      "coverage_percent": 100,
+      "silhouette_cosine": -0.03880517929792404,
+      "singleton_groups": 5,
+      "sizes": {
+        "0": 5,
+        "2": 1,
+        "3": 10,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "8": 1
+      }
+    }
+  },
+  "stability": {
+    "train": {
+      "mean_ari": 0.8060225050047327,
+      "min_ari": 0.6979280138833588,
+      "max_ari": 0.9106574069239204,
+      "pairs": 10,
+      "n": 59
+    },
+    "validation": {
+      "mean_ari": 0.9028481970822447,
+      "min_ari": 0.7814696485623003,
+      "max_ari": 1,
+      "pairs": 10,
+      "n": 20
+    }
+  },
+  "groups": [
+    {
+      "group": 0,
+      "train_n": 5,
+      "validation_n": 5,
+      "keywords": [
+        "execution",
+        "finance",
+        "privacy",
+        "building",
+        "confidential"
+      ]
+    },
+    {
+      "group": 1,
+      "train_n": 8,
+      "validation_n": 0,
+      "keywords": [
+        "ai",
+        "grandma",
+        "agents",
+        "team",
+        "joined"
+      ]
+    },
+    {
+      "group": 2,
+      "train_n": 10,
+      "validation_n": 1,
+      "keywords": [
+        "ai",
+        "agents",
+        "systems",
+        "like",
+        "mistakes"
+      ]
+    },
+    {
+      "group": 3,
+      "train_n": 9,
+      "validation_n": 10,
+      "keywords": [
+        "dots",
+        "openai",
+        "ai",
+        "agents",
+        "shift"
+      ]
+    },
+    {
+      "group": 4,
+      "train_n": 9,
+      "validation_n": 1,
+      "keywords": [
+        "code",
+        "claude",
+        "love",
+        "reply",
+        "just"
+      ]
+    },
+    {
+      "group": 5,
+      "train_n": 5,
+      "validation_n": 1,
+      "keywords": [
+        "sandbox",
+        "build",
+        "agents",
+        "application",
+        "framework"
+      ]
+    },
+    {
+      "group": 6,
+      "train_n": 6,
+      "validation_n": 1,
+      "keywords": [
+        "chatgpt",
+        "coding",
+        "manus",
+        "computer",
+        "percent"
+      ]
+    },
+    {
+      "group": 7,
+      "train_n": 3,
+      "validation_n": 0,
+      "keywords": [
+        "inline",
+        "moves",
+        "police",
+        "okta",
+        "actually"
+      ]
+    },
+    {
+      "group": 8,
+      "train_n": 2,
+      "validation_n": 1,
+      "keywords": [
+        "openclaw",
+        "plane",
+        "enterprise",
+        "control",
+        "nvidia"
+      ]
+    },
+    {
+      "group": 9,
+      "train_n": 2,
+      "validation_n": 0,
+      "keywords": [
+        "agent",
+        "hour",
+        "results",
+        "deliver",
+        "hosting"
+      ]
+    }
+  ],
+  "estimated_x_read_cost_usd": 0.5,
+  "embedding_api_cost_usd": 0,
+  "human_clarity_score": null,
+  "test_evaluated": false
+}

@@ -1,0 +1,99 @@
+{
+  "generatedAt": "2026-10-07T03:18:11.029Z",
+  "kind": "automated_integration_tests_not_human_evaluation",
+  "sourceSha256": "1939071886d5d9fa6cb41945de9bcc4de4c43386e8ceacc2d317aab1b972e840",
+  "planSha256": "4f015301e8f9eae40e00c454e06a5c69b76e8062f1e92ad6782aaedc0c6725ec",
+  "selectedClustering": "kmeans5",
+  "selectionSha256": "3dc7d8162c9ce3a5c57be21d25520cd1b93ef54635d698ac8a2f6277c4df6b18",
+  "groupsSha256": "4560544ea22493e56fdbdf89837297adc05e06d6aa4acd3750226af9d1d00f96",
+  "codeSha256": {
+    "app.mjs": "0f26622f7bfa903d62fdd5816f80e9b3644f5b6b25c59529db9957bce98fd874",
+    "editorial.mjs": "c33cdeac430c6f88209bd4fb568493da956bf2adf73a7c6aaff500a9a52416a1",
+    "pilot.mjs": "95ab90f8846a7dcb100cbdd4ef4ce51e8d4c27cc55410c21f2210bfc50bef767",
+    "ensayo.html": "6f210df249d71d5daad99aa12e4924cef8806247e2562ca45742fe8cac5ec93d",
+    "index.html": "2128a2280b6fbc352decab4ce0e846151251ef62e17a12498fb97c27dda8816a",
+    ".pi/extensions/editorial.ts": "d363bf1a32f9f488f87ae415d9c871f3037c010c868742f1c31072451a60ebe2",
+    ".pi/extensions/proxy.ts": "3d71966660f4f0db1b3338ae34b4a79ad0fa71e4a13fbe4f584a40ba47718a16",
+    "test-tarea6.mjs": "7cd23c31b8d769ad604b37d6bc25177344cc87bdf15bc39f33c84ce0c8a32e49"
+  },
+  "cases": [
+    {
+      "name": "isolated_server_uses_requested_model_and_selected_clustering",
+      "passed": true,
+      "milliseconds": 638.66
+    },
+    {
+      "name": "pilot_initial_state_and_http_token",
+      "passed": true,
+      "milliseconds": 4
+    },
+    {
+      "name": "manual_task_blocks_llm_and_limits_corpus",
+      "passed": true,
+      "milliseconds": 49.56
+    },
+    {
+      "name": "synthetic_manual_task_is_incomplete_and_not_human",
+      "passed": true,
+      "milliseconds": 3.12
+    },
+    {
+      "name": "assisted_task_starts_with_empty_editorial_state",
+      "passed": true,
+      "milliseconds": 45.07
+    },
+    {
+      "name": "real_assisted_conversation_saves_supported_draft",
+      "passed": true,
+      "milliseconds": 38995.89,
+      "elapsedSeconds": 38.992,
+      "tools": [
+        "editorial_opportunities",
+        "save_content_brief",
+        "save_content_brief"
+      ],
+      "claimsWithLiteralQuotes": 2,
+      "briefWords": 147,
+      "suggestedWordRange": [
+        120,
+        180
+      ],
+      "withinSuggestedWordRange": true
+    },
+    {
+      "name": "third_task_resets_editorial_state_and_restricts_new_package",
+      "passed": true,
+      "milliseconds": 56.95,
+      "distinctPiSessions": 3,
+      "initialMessageCounts": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "actual_requests_use_high_and_cost_remains_unknown",
+      "passed": true,
+      "milliseconds": 0.17,
+      "providerRequests": 4,
+      "tokens": {
+        "input": 4237,
+        "output": 1479,
+        "cacheRead": 6272,
+        "cacheWrite": 0,
+        "total": 11988
+      }
+    }
+  ],
+  "humanEvaluation": null,
+  "xApiCalls": 0,
+  "cost": null,
+  "costStatus": "unknown_proxy_tariff",
+  "provider": "biste",
+  "model": "gpt-6.1-sol",
+  "thinking": "high",
+  "finishedAt": "2026-10-07T03:18:50.827Z",
+  "total": 8,
+  "passed": 8,
+  "success": true
+}

@@ -1,0 +1,91 @@
+{
+  "date_ecuador": "2026-09-29",
+  "scope": "Preliminary functional evaluation, not an editorial quality benchmark",
+  "pi_version": "0.99.1",
+  "provider": "openai-codex",
+  "model": "gpt-5.5",
+  "thinking": "low",
+  "source_sha256": "1939071886d5d9fa6cb41945de9bcc4de4c43386e8ceacc2d317aab1b972e840",
+  "code_sha256": {
+    "app.mjs": "ded2718f3367986b948333c3fd3e8cbececc5641abb93b3f72e038090c3d04d0",
+    "editorial.mjs": "25faef54ea4bcfef14e66fe549329f79b569927dc69c9f71d6f57abaeb5c8e86",
+    ".pi/extensions/editorial.ts": "4ff810d7261b0976d4dd7acdc02c6f50bdfb3d2d07f3e9b4d31faa141067d584",
+    "index.html": "e8ed39c9c7e7e94c2b76357a1e1b0939c04d88f35e2f8db66e6b0c57ee03b16a",
+    "test-editorial.mjs": "f5ac238406d5b097dd16eacc21b27ef5486b89087668b9a808a2e9943c6bb466"
+  },
+  "automatic_checks": {
+    "core_passed": 10,
+    "core_total": 10,
+    "http_and_live_passed": 6,
+    "http_and_live_total": 6,
+    "decisions_actor": "automated_test"
+  },
+  "live_scenarios": [
+    {
+      "case": "three_opportunities",
+      "passed": true,
+      "seconds": 22.481,
+      "tool_calls": 1
+    },
+    {
+      "case": "english_brief",
+      "passed": true,
+      "seconds": 24.08,
+      "tool_calls": 1
+    },
+    {
+      "case": "focus_change",
+      "passed": true,
+      "seconds": 16.143,
+      "tool_calls": 1
+    },
+    {
+      "case": "insufficient_evidence",
+      "passed": true,
+      "seconds": 6.39,
+      "tool_calls": 1
+    }
+  ],
+  "server_restart_check": {
+    "passed": true,
+    "messages_recovered": 8,
+    "decisions_recovered": 3,
+    "brief_status": "rejected"
+  },
+  "initial_defect": {
+    "observed": "False abstention: literal matching of audience-qualified phrases returned zero opportunities despite relevant posts.",
+    "adjustment": "Tool description and agent procedure specify individual topic terms; audience remains synthesis context.",
+    "initial_response_seconds": 9.756,
+    "retested_with_natural_request": true
+  },
+  "ui_demonstration": {
+    "ranking_seconds": 26.827,
+    "brief_seconds": 33.936,
+    "groups": [
+      3,
+      2,
+      5
+    ],
+    "scores": [
+      94.67,
+      91.15,
+      90.97
+    ],
+    "brief_title": "Agent Permissions for Solo Founders: Start Narrow Before You Automate",
+    "registered_claims_with_literal_quotes": 5,
+    "human_decision": "accept"
+  },
+  "x_api_calls_for_conversational_evaluation": 0,
+  "catalog_cost_estimate_usd_not_invoice": {
+    "isolated_live_session": 0.196446,
+    "ui_demo_session": 0.173387
+  },
+  "billing_note": "Pi used the existing subscribed account. Model catalog estimates are not observed additional charges or general API credits.",
+  "not_measured": [
+    "human_utility_1_to_5",
+    "manual_vs_assisted_time_reduction",
+    "truth_or_entailment_of_all_claims",
+    "membership_acquisition",
+    "temporal_trend_growth"
+  ]
+}

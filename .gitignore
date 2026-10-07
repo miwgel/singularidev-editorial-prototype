@@ -1,0 +1,11 @@
+.cache/
+.env
+.env.*
+.venv/
+__pycache__/
+.DS_Store
+node_modules/
+*.log
+.pi/*
+!.pi/extensions/
+!.pi/extensions/**
